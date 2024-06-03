@@ -6,9 +6,8 @@
 -- Config blocks allow you to configure, document, and test your data assets.
 config {
   type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
-  columns: {
-    test: "A description for the test column", // Column descriptions are pushed to BigQuery.
-  }
+  schema: "staging",
+  description: "Table with sum of sessions and users per year and month",
 }
 
 -- The rest of a SQLX file contains your SELECT statement used to create the table.
@@ -17,4 +16,3 @@ config {
 SELECT 
 *
 from ${ref(constants.GA4_DATASET,constants.GA4_TABLE)}
-
