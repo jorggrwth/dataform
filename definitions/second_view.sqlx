@@ -1,6 +1,7 @@
 config {
   type: "table", // Creates a table in BigQuery. 
   schema: "staging",
+  name: "universal_analytics_data",
   description: "Aggregated table with sum of sessions and users per year"
 }
 

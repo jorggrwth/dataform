@@ -1,0 +1,13 @@
+config {
+  type: "view", // Creates a table in BigQuery. 
+  schema: "staging",
+  name: "ga4_data",
+  description: "Aggregated table with sum of sessions and users per year"
+}
+
+SELECT 
+event_date,
+event_name,
+user_pseudo_id,
+
+from ${ref(constants.GA4_DATASET,constants.GA4_TABLE)}
