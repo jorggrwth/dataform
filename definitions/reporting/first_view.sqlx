@@ -15,4 +15,5 @@ config {
 
 SELECT 
 *
-from ${ref(constants.GA4_DATASET,constants.GA4_TABLE)}
+from ${ref(constants.UA_DATASET,constants.UA_TABLE)}
+

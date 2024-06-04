@@ -1,5 +1,5 @@
 declare({
-    database: constants.GA4_DATABASE,
-    schema: constants.GA4_DATASET,
-    name: constants.GA4_TABLE,
+    database: constants.UA_DATABASE,
+    schema: constants.UA_DATASET,
+    name: constants.UA_TABLE,
 });
